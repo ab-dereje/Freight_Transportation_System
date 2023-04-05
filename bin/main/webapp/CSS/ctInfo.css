@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar */
+body .navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 15px #777;
+    padding: 15px 25px;
+    min-height: 100px;
+    position:fixed;
+    background-color: #1c1c1c;
+}
+body .navbar .logo{
+    color: #47B5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+body .navbar .logo i
+{
+    font-size: 30px;
+    color: brown;
+}
+body .navbar .logo h1
+{
+    font-size: 25px;
+}
+body .navbar span{
+    color: #EB6440;
+}
+/* .navbar p{
+    color: #393E46;
+} */
+body .navbar a
+{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 18px;
+    padding: 0 5px;
+    font-weight: 600;
+}
+body .navbar a.reg
+{
+    color: #EB6440;
+}
+body .navbar a.log
+{
+    color: #47B5FF;
+}
+body .navbar a.reg:hover{
+    color: #47B5FF;
+    transition: 0.3s;
+}
+body .navbar a.log:hover{
+    color: #EB6440;
+    transition: 0.3s;
+}
+body .navbar:hover
+{
+    background-color: #1c1c1c;
+    /* border-bottom: solid 1px #EB6440; */
+    box-shadow: 0 1px 15px #EB6440;
+    transition: 0.5s;
+}
+
+body{
+    padding-top: 150px;
+}
+.fields{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+.main{
+    border-bottom: 1px solid #777;
+    padding: 1rem;
+}
+.fields-container{
+    display: grid;
+    /* 8 grids */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    font-size: 12px;
+    margin-top: 20px;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 1.2rem;
+}
+.title{
+    font-size: 17px;
+    font-weight: bold;
+}
+.admin-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sections{
+    background-color: #d1cfcf67;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: all ease-in-out 300ms;
+}
+.sections:hover{
+    box-shadow: 1px 1px 2px black;
+    transform: scale(101%);
+    transition: all ease-in-out 300ms;
+}
+.view-mores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+    margin: 0 1.3rem;
+}
+.view-more{
+    border: none;
+    padding: .5rem 1rem;
+    background-color: #777;
+    border-radius:6px;
+    color: white;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Navbar */
+body .navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 15px #777;
+    padding: 15px 25px;
+    min-height: 100px;
+    position:fixed;
+    background-color: #1c1c1c;
+}
+body .navbar .logo{
+    color: #47B5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+body .navbar .logo i
+{
+    font-size: 30px;
+    color: brown;
+}
+body .navbar .logo h1
+{
+    font-size: 25px;
+}
+body .navbar span{
+    color: #EB6440;
+}
+body .navbar a
+{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 18px;
+    padding: 0 5px;
+    font-weight: 600;
+}
+body .navbar a.reg
+{
+    color: #EB6440;
+}
+body .navbar a.log
+{
+    color: #47B5FF;
+}
+body .navbar a.reg:hover{
+    color: #47B5FF;
+    transition: 0.3s;
+}
+body .navbar a.log:hover{
+    color: #EB6440;
+    transition: 0.3s;
+}
+body .navbar:hover
+{
+    background-color: #1c1c1c;
+    box-shadow: 0 1px 15px #EB6440;
+    transition: 0.5s;
+}
+/* body */
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+body .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px;
+    background-color: #777;
+}
+body .container .box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 180px;
+    border-radius: 5px;
+    border: solid 1px;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #fff;
+    font-size: 20px;
+}
+body h1
+{
+    font-size: 45px;
+    color: #47B5FF;
+}
+body span{
+    color: #EB6440;
+}
+p{
+    width: 60%;
+}
+a {
+    color: #1c1c1c;
+}
+.container .box:hover{
+    font-weight: 500;
+    transform: scale(1.07);
+    color: #fff;
+    border: none;
+    background-color: #47B5FF;
+    transition: 0.3s;
+}

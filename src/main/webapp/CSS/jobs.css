@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+/* Navbar */
+body .navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 15px #777;
+    padding: 0 25px;
+    min-height: 100px;
+    background-color: #1c1c1c;
+    display: absolute;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+body .navbar .links
+{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-right: 55px;
+}
+body .navbar .logo{
+    color: #47B5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+body .navbar .logo i
+{
+    font-size: 30px;
+    color: brown;
+}
+body .navbar .logo h1
+{
+    font-size: 25px;
+}
+body .navbar span{
+    color: #EB6440;
+}
+/* .navbar p{
+    color: #393E46;
+} */
+body .navbar a
+{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 18px;
+    padding: 0 5px;
+    font-weight: 600;
+}
+body .navbar a.reg
+{
+    color: #EB6440;
+}
+body .navbar a.log
+{
+    color: #47B5FF;
+}
+body .navbar a.reg:hover{
+    color: #47B5FF;
+    transition: 0.3s;
+}
+body .navbar a.log:hover{
+    color: #EB6440;
+    transition: 0.3s;
+}
+body .navbar:hover
+{
+    background-color: #1c1c1c;
+    /* border-bottom: solid 1px #EB6440; */
+    box-shadow: 0 1px 15px #EB6440;
+    transition: 0.5s;
+}
+
+/* body */
+body
+{
+    min-height: 80vh;
+    background: url(../images/home12.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: #D6E4E5; */
+    /* backdrop-filter: blur(15px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    padding: 150px 0;
+    flex-direction: column;
+    display: relative;
+}
+body .post
+{
+    min-height: 0;
+    width: 850px;
+    /* background-color: #0081C9; */
+    background-color: #1c1c1c;
+    border-radius: 0 50px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px;
+    opacity: 0.8;
+    /* overflow: hidden; */
+}
+body .post:hover
+{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+body .post .head
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #fff;
+}
+body .post .id
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 40px;
+}
+body .post .id h3
+{
+    /* background-color: #47B5FF; */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0 15px ;
+}
+body .post .id h3:hover
+{
+    transform: translateY(-20px);
+    transition: 0.5s ease;
+}
+
+
+
+body .post .details
+{
+    text-align: justify;
+    color: #fff;
+}
+body .post .details .bp
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body .post .details .bp h4
+{
+    color: #fff;
+}
+body .post .details .bp span
+{
+    color:aqua;
+}
+body .post .details button
+{
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    /* border: 1px solid #5DA7DB; */
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 0 3px 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+body .post .details button.del
+{
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    /* border: 1px solid #5DA7DB; */
+    border: 1px solid #EB6440;
+    outline: none;
+    box-shadow: 0 3px 10px;
+    background-color: transparent;
+    color: #EB6440;
+    font-size: 16px;
+}
+body .post .details button:hover
+{
+    background-color: #fff;
+    box-shadow: 0 3px 10px #3C4048;
+    /* color: #47B5FF; */
+    color: #1c1c1c;
+    transition: 0.4s;
+    
+}
+body .post .details button.del:hover
+{
+    background-color: #EB6440;
+    box-shadow: 0 3px 10px #3C4048;
+    /* color: #47B5FF; */
+    color: #fff;
+    transition: 0.4s;
+    
+}
